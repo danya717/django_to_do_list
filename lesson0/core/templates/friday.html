@@ -4,14 +4,14 @@
 <head>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>
-        Список дел на понедельник
+        Список дел на пятницу
     </title>
 </head>
 <body>
-<h1 class="monday_page_title">
-    Мой список дел на понедельник
+<h1 class="friday_page_title">
+    Мой список дел на пятницу
 </h1>
-<ol class="monday_deals">
+<ol class="friday_deals">
     {% for todo in todo_list %}
         <li>{{ todo }}</li>
     {% endfor %}

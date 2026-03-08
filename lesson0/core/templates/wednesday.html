@@ -1,15 +1,17 @@
+{% load static %}
 <!doctype html>
 <html>
 <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>
         Список дел на среду
     </title>
 </head>
 <body>
-<h1>
+<h1 class="wednesday_page_title">
     Мой список дел на среду
 </h1>
-<ol>
+<ol class="wednesday_deals">
     {% for todo in  todo_list %}
         <li>{{ todo }}</li>
     {% endfor %}
