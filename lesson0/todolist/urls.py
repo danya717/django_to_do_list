@@ -1,17 +1,17 @@
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
-from core.views import index, monday, tuesday, wednesday, thursday, friday, saturday, sunday, creator
+from core.views import index, main, creator
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('monday', monday),
-    path('tuesday', tuesday),
-    path('wednesday', wednesday),
-    path('thursday', thursday),
-    path('friday', friday),
-    path('saturday', saturday),
-    path('sunday', sunday),
+    path('monday', main, name='monday'),
+    path('tuesday', main, name='tuesday'),
+    path('wednesday', main, name='wednesday'),
+    path('thursday', main, name='thursday'),
+    path('friday', main, name='friday'),
+    path('saturday', main, name='saturday'),
+    path('sunday', main, name='sunday'),
     path('creator', creator),
 ]
