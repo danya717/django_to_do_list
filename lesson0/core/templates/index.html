@@ -1,43 +1,13 @@
-{% load static %}
-<!doctype html>
-<html>
-<head>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>
-        Список дел на неделю
-    </title>
-</head>
-<body>
-    <h1 class="mainPageTitle">Мой список дел на неделю</h1>
-    <ol class="menu">
-        <div class="week_days">
-            <li>
-                <a href="monday">Понедельник</a>
-            </li>
-            <li>
-                <a href="tuesday">Вторник</a>
-            </li>
-            <li>
-                <a href="wednesday">Среда</a>
-            </li>
-            <li>
-                <a href="thursday">Четверг</a>
-            </li>
-            <li>
-                <a href="friday">Пятница</a>
-            </li>
-            <li>
-                <a href="saturday">Суббота</a>
-            </li>
-            <li>
-                <a href="sunday">Воскресенье</a>
-            </li>
-        </div>
-    </ol>
-    <a href="creator">
-        <button type="button">About Creator</button>
-    </a>
-    <h2 class="week_days_title">Дни недели</h2>
-    <p class="description"> -На этом сайте можешь видеть свои дела на неделю.</p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+    Список дел на неделю
+{% endblock %}
+
+{% block description %}
+    - На этом сайте можешь видеть свой список дел на неделю
+{% endblock %}
+
+{% block main_page_title %}
+    Мой список дел на неделю
+{% endblock %}

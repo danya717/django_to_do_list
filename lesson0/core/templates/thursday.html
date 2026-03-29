@@ -1,21 +1,9 @@
-{% load static %}
-<!doctype html>
-<html>
-<head>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>
-        Список дел на четверг
-    </title>
-</head>
-<body>
-<h1 class="thursday_page_title">
+{% extends 'base.html' %}
+
+{% block title %}
+    Список дел на четверг
+{% endblock %}
+
+{% block page_title %}
     Мой список дел на четверг
-</h1>
-<ol class="thursday_deals">
-    {% for todo in todo_list %}
-        <li>{{ todo }}</li>
-    {% endfor %}
-</ol>
-<a href="/">Вернуться назад</a>
-</body>
-</html>
+{% endblock %}
